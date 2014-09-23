@@ -144,7 +144,7 @@ public class InstallItem
         
         // Record that the item was restored
         String provDescription = "Restored into DSpace on "+ now + " (GMT).";
-        item.addDC("description", "provenance", "en", provDescription);
+        item.addDC("description", "provenance", "eng", provDescription);
 
         return finishItem(c, item, is);
     }
@@ -161,7 +161,9 @@ public class InstallItem
         // be set when the embargo is lifted.
         // this will flush out fatal embargo metadata
         // problems before we set inArchive.
-        if (EmbargoManager.getEmbargoTermsAsDate(c, item) == null)
+        if (EmbargoManager.getEmbargoTermsAsDate(c, item) == null
+        		/** TEDE: Checks if item already has dc.date.available **/
+        		&& item.getMetadata("dc.date.available") == null)
         {
              item.addDC("date", "available", null, now.toString());
         }
@@ -202,7 +204,7 @@ public class InstallItem
         }
 
         // Add provenance description
-        item.addDC("description", "provenance", "en", provDescription);
+        item.addDC("description", "provenance", "eng", provDescription);
     }
 
     // final housekeeping when adding new Item to archive

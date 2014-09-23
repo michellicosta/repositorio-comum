@@ -91,26 +91,9 @@
 	   
 	  </page> 
 	   	   		
-	<page number="2">
-	
-		<field>
-		 <dc-schema>dc</dc-schema>
-         <dc-element>contributor</dc-element>
-         <dc-qualifier>author</dc-qualifier>
-         <repeatable>true</repeatable>
-         <label>Autor(es):</label>
-		 <type-bind>article, conferenceObject, book, bookPart, report, other</type-bind>
-         <input-type>name</input-type>
-         <hint>&lt;div class="alert alert-info"&gt;
-		 Descrição do &lt;strong&gt;AUTOR&lt;/strong&gt;
-		 &lt;a tooltiped="" style="float:right" href="help/submit-help.html#id-autor" &gt;Exemplos&lt;/a&gt;
-		 &lt;/div&gt;
-		 &lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe o nome do(s) autor(es), conforme o formato de citação.</hint>
-         <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Informe o nome do(s) AUTOR(ES), conforme o formato de citação.&lt;/font&gt;
-		           &lt;a href="help/submit-help.html#id-autor" tooltiped="" style="float:right;color:black;" href="#" &gt;Exemplos&lt;/a&gt;</required>
-       </field>
-	
-       <field>
+   <page number="2"> 
+   
+        <field>
          <dc-schema>dc</dc-schema>
          <dc-element>date</dc-element>
          <dc-qualifier>issued</dc-qualifier>
@@ -121,35 +104,6 @@
          <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe a data de defesa do documento descrito, ou seja, a data de defesa da tese ou dissertação. </hint>
          <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Informe a data de defesa do documento descrito, ou seja, a data de defesa da tese ou dissertação. &lt;/font&gt;</required>
        </field>
-	
-	   <field>
-         <dc-schema>dc</dc-schema>
-         <dc-element>date</dc-element>
-         <dc-qualifier>issued</dc-qualifier>
-         <repeatable>false</repeatable>
-         <label>Data da publicação:</label>
-		 <type-bind>article, conferenceObject, book, bookPart, report, other</type-bind>
-         <input-type>date</input-type>
-         <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe a data da publicação do documento descrito. </hint>
-         <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Informe a data da publicação do documento descrito. &lt;/font&gt;</required>
-       </field>
-	
-<!--	
-	  <field>
-		 <dc-schema>dc</dc-schema>
-         <dc-element>date</dc-element>
-         <dc-qualifier>available</dc-qualifier>
-         <repeatable>false</repeatable>
-         <label>Data de liberação para acesso:</label>
-         <input-type>date</input-type>
-         <hint>Data de disponibilidade do registro. Esta pode ser diferente  da disponibilização do texto completo, no caso dos embargos ou restrições de acesso ao documento completo.</hint>
-         <required></required>
-      </field>   
- -->
-	  
-	</page>
-
-    <page number="3"> 
 	
 
 		<!-- AUTOR -->
@@ -235,172 +189,12 @@
          <input-type>onebox</input-type>
          <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe o identificador único do orientador(CPF, ID de autor privativa da instituição ou passaporte).</hint>
          <required></required>
-       </field>  
+       </field> 
+
+   </page> 
+	   	   		
+   <page number="3"> 
 	   
-	   
-	   <!-- ESPECÍFICOS PARA PERIÓDICOS, EVENTOS, LIVROS, CAPÍTULOS DE LIVROS, RELATÓRIOS DE PESQUISA E OUTROS -->
-	
-	  <field>
-		 <dc-schema>dc</dc-schema>
-         <dc-element>relation</dc-element>
-         <dc-qualifier>ispartof</dc-qualifier>
-         <repeatable>false</repeatable>
-         <label>Título do periódico:</label>
-		 <type-bind>article</type-bind>
-         <input-type>onebox</input-type>
-         <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe o título do periódico. &lt;/font&gt;</hint>
-         <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Informe o título do periódico.&lt;/font&gt;</required>
-       </field>
-	   
-	   <field>
-		 <dc-schema>dc</dc-schema>
-         <dc-element>relation</dc-element>
-         <dc-qualifier>ispartof</dc-qualifier>
-         <repeatable>false</repeatable>
-         <label>Título do evento:</label>
-		 <type-bind>conferenceObject</type-bind>
-         <input-type>onebox</input-type>
-         <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe o título do evento. &lt;/font&gt;</hint>
-         <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Informe o título do evento.&lt;/font&gt;</required>
-       </field>
-	   
-	   <field>
-		 <dc-schema>dc</dc-schema>
-         <dc-element>relation</dc-element>
-         <dc-qualifier>ispartof</dc-qualifier>
-         <repeatable>false</repeatable>
-         <label>Título da coleção:</label>
-		 <type-bind>book</type-bind>
-         <input-type>onebox</input-type>
-         <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe o título da coleção. &lt;/font&gt;</hint>
-         <required></required>
-       </field>
-	   
-	   <field>
-		 <dc-schema>dc</dc-schema>
-         <dc-element>relation</dc-element>
-         <dc-qualifier>ispartof</dc-qualifier>
-         <repeatable>false</repeatable>
-         <label>Título da pesquisa:</label>
-		 <type-bind>report</type-bind>
-         <input-type>onebox</input-type>
-         <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe o título da pesquisa. &lt;/font&gt;</hint>
-         <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Informe o título da pesquisa.&lt;/font&gt;</required>
-       </field>
-	   
-	   <field>
-		 <dc-schema>dc</dc-schema>
-         <dc-element>relation</dc-element>
-         <dc-qualifier>ispartof</dc-qualifier>
-         <repeatable>false</repeatable>
-         <label>Título do livro:</label>
-		 <type-bind>bookpart</type-bind>
-         <input-type>onebox</input-type>
-         <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe o título do livro. &lt;/font&gt;</hint>
-         <required>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe o título do livro. &lt;/font&gt;</required>
-       </field>
-	   
-	   
-	   <field>
-		 <dc-schema>dc</dc-schema>
-         <dc-element>citation</dc-element>
-         <dc-qualifier>volume</dc-qualifier>
-         <repeatable>false</repeatable>
-         <label>Volume do periódico:</label>
-		 <type-bind>article</type-bind>
-         <input-type>onebox</input-type>
-         <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe o volume do periódico.</hint>
-         <required></required>
-       </field>
-	   
-	   <field>
-		 <dc-schema>dc</dc-schema>
-         <dc-element>citation</dc-element>
-         <dc-qualifier>issue</dc-qualifier>
-         <repeatable>false</repeatable>
-         <label>Número de edição do periódico:</label>
-		 <type-bind>article</type-bind>
-         <input-type>onebox</input-type>
-         <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe o número de edição do periódico.</hint>
-         <required></required>
-       </field>
-		
-	   <field>
-		 <dc-schema>dc</dc-schema>
-         <dc-element>citation</dc-element>
-         <dc-qualifier>issue</dc-qualifier>
-         <repeatable>false</repeatable>
-         <label>Número de edição do evento:</label>
-		 <type-bind>conferenceObject</type-bind>
-         <input-type>onebox</input-type>
-         <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe o número de edição do evento.</hint>
-         <required>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe o número de edição do evento.</required>
-       </field>	
-	   
-	   <field>
-		 <dc-schema>dc</dc-schema>
-         <dc-element>citation</dc-element>
-         <dc-qualifier>issue</dc-qualifier>
-         <repeatable>false</repeatable>
-         <label>Número do livro na coleção:</label>
-		 <type-bind>book</type-bind>
-         <input-type>onebox</input-type>
-         <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe o número do livro na coleção.</hint>
-         <required></required>
-       </field>
-		
-		<field>
-		 <dc-schema>dc</dc-schema>
-         <dc-element>citation</dc-element>
-         <dc-qualifier>spage</dc-qualifier>
-         <repeatable>false</repeatable>
-         <label>Página inicial:</label>
-		 <type-bind>article, bookPart</type-bind>
-         <input-type>onebox</input-type>
-         <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe a página inicial.</hint>
-         <required></required>
-       </field>
-		
-	   <field>
-		 <dc-schema>dc</dc-schema>
-         <dc-element>citation</dc-element>
-         <dc-qualifier>epage</dc-qualifier>
-         <repeatable>false</repeatable>
-         <label>Página final:</label>
-		 <type-bind>article, bookPart</type-bind>
-         <input-type>onebox</input-type>
-         <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe a página final.</hint>
-         <required></required>
-       </field>
-	   
-	   <field>
-		 <dc-schema>dc</dc-schema>
-         <dc-element>audience</dc-element>
-         <dc-qualifier>educationlevel</dc-qualifier>
-         <repeatable>false</repeatable>
-         <label>Nível educacional:</label>
-		 <type-bind>other</type-bind>
-         <input-type>onebox</input-type>
-         <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe o nível educacional.</hint>
-         <required></required>
-       </field>
-	    
-	   <field>
-         <dc-schema>dc</dc-schema>
-         <dc-element>description</dc-element>
-         <dc-qualifier></dc-qualifier>
-         <repeatable>true</repeatable>
-         <label>Objetivo:</label>
-		 <type-bind>other</type-bind>
-         <input-type>onebox</input-type>
-         <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informar o objetivo. </hint>
-         <required></required>
-       </field>
-	   
-	</page>
-		
-    <page number="4"> 
-	
 	   <!-- PRIMEIRO CO-ORIENTADOR -->
 	   
 	   <field>
@@ -482,12 +276,53 @@
          <input-type>onebox</input-type>
          <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe o identificador único do segundo coorientador (CPF, ID de autor privativa da instituição ou passaporte).</hint>
          <required></required>
-       </field>  
+       </field>  	   
 	
-    </page>
-
-
-    <page number="5"> 
+	   <field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>author</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Autor(es):</label>
+		 <type-bind>article, conferenceObject, book, bookPart, report, other</type-bind>
+         <input-type>name</input-type>
+         <hint>&lt;div class="alert alert-info"&gt;
+		 Descrição do &lt;strong&gt;AUTOR&lt;/strong&gt;
+		 &lt;a tooltiped="" style="float:right" href="help/submit-help.html#id-autor" &gt;Exemplos&lt;/a&gt;
+		 &lt;/div&gt;
+		 &lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe o nome do(s) autor(es), conforme o formato de citação.</hint>
+         <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Informe o nome do(s) AUTOR(ES), conforme o formato de citação.&lt;/font&gt;
+		           &lt;a href="help/submit-help.html#id-autor" tooltiped="" style="float:right;color:black;" href="#" &gt;Exemplos&lt;/a&gt;</required>
+       </field>
+	
+	   <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>date</dc-element>
+         <dc-qualifier>issued</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Data da publicação:</label>
+		 <type-bind>article, conferenceObject, book, bookPart, report, other</type-bind>
+         <input-type>date</input-type>
+         <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe a data da publicação do documento descrito. </hint>
+         <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Informe a data da publicação do documento descrito. &lt;/font&gt;</required>
+       </field>
+	
+<!--	
+	  <field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>date</dc-element>
+         <dc-qualifier>available</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Data de liberação para acesso:</label>
+         <input-type>date</input-type>
+         <hint>Data de disponibilidade do registro. Esta pode ser diferente  da disponibilização do texto completo, no caso dos embargos ou restrições de acesso ao documento completo.</hint>
+         <required></required>
+      </field>   
+ -->
+	   
+	</page>
+		
+    <page number="4"> 	   
 	   
 	   <!-- PRIMEIRO MEMBRO DA BANCA -->
 	   
@@ -695,10 +530,170 @@
          <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe o identificador único do quinto membro da banca(CPF, ID de autor privativa da instituição ou passaporte).</hint>
          <required></required>
        </field>
+	   
+	   
+	  <!-- ESPECÍFICOS PARA PERIÓDICOS, EVENTOS, LIVROS, CAPÍTULOS DE LIVROS, RELATÓRIOS DE PESQUISA E OUTROS -->
+	
+	  <field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>relation</dc-element>
+         <dc-qualifier>ispartof</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Título do periódico:</label>
+		 <type-bind>article</type-bind>
+         <input-type>onebox</input-type>
+         <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe o título do periódico. &lt;/font&gt;</hint>
+         <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Informe o título do periódico.&lt;/font&gt;</required>
+       </field>
+	   
+	   <field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>relation</dc-element>
+         <dc-qualifier>ispartof</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Título do evento:</label>
+		 <type-bind>conferenceObject</type-bind>
+         <input-type>onebox</input-type>
+         <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe o título do evento. &lt;/font&gt;</hint>
+         <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Informe o título do evento.&lt;/font&gt;</required>
+       </field>
+	   
+	   <field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>relation</dc-element>
+         <dc-qualifier>ispartof</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Título da coleção:</label>
+		 <type-bind>book</type-bind>
+         <input-type>onebox</input-type>
+         <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe o título da coleção. &lt;/font&gt;</hint>
+         <required></required>
+       </field>
+	   
+	   <field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>relation</dc-element>
+         <dc-qualifier>ispartof</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Título da pesquisa:</label>
+		 <type-bind>report</type-bind>
+         <input-type>onebox</input-type>
+         <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe o título da pesquisa. &lt;/font&gt;</hint>
+         <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Informe o título da pesquisa.&lt;/font&gt;</required>
+       </field>
+	   
+	   <field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>relation</dc-element>
+         <dc-qualifier>ispartof</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Título do livro:</label>
+		 <type-bind>bookpart</type-bind>
+         <input-type>onebox</input-type>
+         <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe o título do livro. &lt;/font&gt;</hint>
+         <required>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe o título do livro. &lt;/font&gt;</required>
+       </field>
+	   
+	   
+	   <field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>citation</dc-element>
+         <dc-qualifier>volume</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Volume do periódico:</label>
+		 <type-bind>article</type-bind>
+         <input-type>onebox</input-type>
+         <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe o volume do periódico.</hint>
+         <required></required>
+       </field>
+	   
+	   <field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>citation</dc-element>
+         <dc-qualifier>issue</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Número de edição do periódico:</label>
+		 <type-bind>article</type-bind>
+         <input-type>onebox</input-type>
+         <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe o número de edição do periódico.</hint>
+         <required></required>
+       </field>
+		
+	   <field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>citation</dc-element>
+         <dc-qualifier>issue</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Número de edição do evento:</label>
+		 <type-bind>conferenceObject</type-bind>
+         <input-type>onebox</input-type>
+         <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe o número de edição do evento.</hint>
+         <required>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe o número de edição do evento.</required>
+       </field>	
+	   
+	   <field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>citation</dc-element>
+         <dc-qualifier>issue</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Número do livro na coleção:</label>
+		 <type-bind>book</type-bind>
+         <input-type>onebox</input-type>
+         <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe o número do livro na coleção.</hint>
+         <required></required>
+       </field>
+		
+		<field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>citation</dc-element>
+         <dc-qualifier>spage</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Página inicial:</label>
+		 <type-bind>article, bookPart</type-bind>
+         <input-type>onebox</input-type>
+         <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe a página inicial.</hint>
+         <required></required>
+       </field>
+		
+	   <field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>citation</dc-element>
+         <dc-qualifier>epage</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Página final:</label>
+		 <type-bind>article, bookPart</type-bind>
+         <input-type>onebox</input-type>
+         <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe a página final.</hint>
+         <required></required>
+       </field>
+	   
+	   <field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>audience</dc-element>
+         <dc-qualifier>educationlevel</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Nível educacional:</label>
+		 <type-bind>other</type-bind>
+         <input-type>onebox</input-type>
+         <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe o nível educacional.</hint>
+         <required></required>
+       </field>
+	    
+	   <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Objetivo:</label>
+		 <type-bind>other</type-bind>
+         <input-type>onebox</input-type>
+         <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informar o objetivo. </hint>
+         <required></required>
+       </field>
 
 	</page>
 
-    <page number="6"> 
+    <page number="5"> 
 	   
 
 	   <field>
@@ -823,7 +818,7 @@
 	 
 	   </page>
 	   
-	   <page number="7">  
+	   <page number="6">  
 	   
 	   <field>
          <dc-schema>dc</dc-schema>
@@ -916,7 +911,7 @@
 	</page>
 	
 	
-	<page number="8">
+	<page number="7">
 
 	   
 	   	<field>

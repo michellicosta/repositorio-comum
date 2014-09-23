@@ -18,17 +18,24 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.apache.commons.lang.time.DateUtils;
+import org.apache.commons.lang3.math.NumberUtils;
 import org.apache.log4j.Logger;
 import org.dspace.app.util.SubmissionInfo;
 import org.dspace.app.util.Util;
 import org.dspace.authorize.AuthorizeException;
 import org.dspace.authorize.AuthorizeManager;
 import org.dspace.authorize.ResourcePolicy;
-import org.dspace.content.*;
-import org.dspace.core.Context;
+import org.dspace.content.Bitstream;
+import org.dspace.content.BitstreamFormat;
+import org.dspace.content.Bundle;
+import org.dspace.content.Collection;
+import org.dspace.content.FormatIdentifier;
+import org.dspace.content.Item;
 import org.dspace.core.ConfigurationManager;
+import org.dspace.core.Context;
 import org.dspace.curate.Curator;
 import org.dspace.handle.HandleManager;
+import org.dspace.submit.step.domain.EmbargoOption;
 
 /**
  * Upload step with the advanced embargo system for DSpace. Processes the actual 
@@ -56,8 +63,8 @@ public class UploadWithEmbargoStep extends UploadStep
 
     public static final int STATUS_EDIT_POLICY_ERROR_SELECT_GROUP = 33;
     public static final int STATUS_EDIT_POLICY_DUPLICATED_POLICY = 34;
-
-
+    
+    
     /** log4j logger */
     private static Logger log = Logger.getLogger(UploadWithEmbargoStep.class);
 
@@ -478,18 +485,36 @@ public class UploadWithEmbargoStep extends UploadStep
         // if Anonymous does not have right on this collection, create policies for any other groups with
         // DEFAULT_ITEM_READ specified.
         if(!isAdvancedFormEnabled){
-            Date startDate = null;
+            Date inputEmbargoUntilDate = null;
+            String inputEmbargoUntil = request.getParameter("embargo_until_date");
             try {
-                startDate = DateUtils.parseDate(request.getParameter("embargo_until_date"), new String[]{"yyyy-MM-dd", "yyyy-MM", "yyyy"});
+				inputEmbargoUntilDate = DateUtils.parseDate(inputEmbargoUntil, new String[]{"yyyy-MM-dd", "yyyy-MM", "yyyy"});
             } catch (Exception e) {
                 //Ignore start date already null
             }
+            
             String reason = request.getParameter("reason");
-            AuthorizeManager.generateAutomaticPolicies(context, startDate, reason, b, (Collection) HandleManager.resolveToObject(context, subInfo.getCollectionHandle()));
+            
+            String embargoTypeCandidate = request.getParameter("embargo_type");
+            EmbargoOption embargoOption = null;
+			if(embargoTypeCandidate != null && NumberUtils.isDigits(embargoTypeCandidate))
+			{
+				Integer embargoType = Integer.valueOf(embargoTypeCandidate);
+				
+				/** Checks if user has requested embargo type **/
+				embargoOption = EmbargoOption.recoverById(embargoType);
+				
+				AuthorizeManager.generateAutomaticPolicies(context, embargoOption != null && embargoOption.equals(EmbargoOption.RESTRICTED) ? EmbargoOption.RESTRICTED.getAssociatedDate() :
+					inputEmbargoUntilDate, reason, b, (Collection) HandleManager.resolveToObject(context, subInfo.getCollectionHandle()));
+			}
+			else
+			{
+				AuthorizeManager.generateAutomaticPolicies(context, inputEmbargoUntilDate, reason, b, (Collection) HandleManager.resolveToObject(context, subInfo.getCollectionHandle()));
+			}
+			
         }
     }
-
-
+    
     private int editBitstreamPolicies(HttpServletRequest request, Context context, SubmissionInfo subInfo, String buttonPressed)
             throws SQLException, AuthorizeException {
 
