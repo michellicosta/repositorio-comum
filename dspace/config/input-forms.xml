@@ -55,7 +55,10 @@
          <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Selecione o tipo de documento. &lt;/font&gt;</required>
        </field>
 	   
+	  </page> 
 	   	   		
+	<page number="2">
+	
        <field>
          <dc-schema>dc</dc-schema>
          <dc-element>date</dc-element>
@@ -93,7 +96,7 @@
 
 	</page>
 
-    <page number="2"> 
+    <page number="3"> 
 	
 		<!-- AUTOR -->
 	
@@ -175,7 +178,7 @@
        </field>  
 		
 	</page>
-    <page number="3"> 
+    <page number="4"> 
 	
 	   <!-- PRIMEIRO CO-ORIENTADOR -->
 	   
@@ -257,7 +260,7 @@
     </page>
 
 
-    <page number="4"> 
+    <page number="5"> 
 	   
 	   <!-- PRIMEIRO MEMBRO DA BANCA -->
 	   
@@ -453,7 +456,7 @@
 
 	</page>
 
-    <page number="5"> 
+    <page number="6"> 
 	   
 
 	   <field>
@@ -555,7 +558,7 @@
 	 
 	   </page>
 	   
-	   <page number="6">  
+	   <page number="7">  
 	   
 	   <field>
          <dc-schema>dc</dc-schema>
@@ -631,7 +634,7 @@
        </field>
 	</page>
 	
-	<page number="7">
+	<page number="8">
 
 
 	<!--
@@ -684,26 +687,58 @@
    <value-pairs value-pairs-name="common_rights" dc-term="rights">
      <pair>
        <displayed-value>Acesso Aberto</displayed-value>
-       <stored-value>Acesso Aberto</stored-value>
+       <stored-value>openAccess</stored-value>
      </pair>
      <pair>
        <displayed-value>Acesso Embargado</displayed-value>
-       <stored-value>Acesso Embargado</stored-value>
+       <stored-value>embargoedAccess</stored-value>
      </pair>
      <pair>
        <displayed-value>Acesso Restrito</displayed-value>
-       <stored-value>Acesso Restrito</stored-value>
+       <stored-value>restrictAccess</stored-value>
      </pair>
    </value-pairs>
 
     <value-pairs value-pairs-name="common_types" dc-term="type">
+	 <pair>
+       <displayed-value>Artigos publicados em periódicos</displayed-value>
+       <stored-value>article</stored-value>
+     </pair>
+	 <pair>
+       <displayed-value>Trabalhos apresentados em envetos acadêmicos</displayed-value>
+       <stored-value>conferenceObject</stored-value>
+     </pair>
      <pair>
        <displayed-value>Tese</displayed-value>
-       <stored-value>Tese</stored-value>
+       <stored-value>doctoralThesis</stored-value>
      </pair>
      <pair>
        <displayed-value>Dissertação</displayed-value>
-       <stored-value>Dissertação</stored-value>
+       <stored-value>mastherThesis</stored-value>
+     </pair>
+	 <pair>
+       <displayed-value>Dissertação</displayed-value>
+       <stored-value>bachelorThesis</stored-value>
+     </pair>
+	 <pair>
+       <displayed-value>Livro</displayed-value>
+       <stored-value>book</stored-value>
+     </pair>
+	 <pair>
+       <displayed-value>Capítulo de livro</displayed-value>
+       <stored-value>bookPart</stored-value>
+     </pair>
+	 <pair>
+       <displayed-value>Relatório de pesquisa</displayed-value>
+       <stored-value>report</stored-value>
+     </pair>
+	 <pair>
+       <displayed-value>Objetos de aprendizagem</displayed-value>
+       <stored-value>other</stored-value>
+     </pair>
+	 <pair>
+       <displayed-value>Dados científicos</displayed-value>
+       <stored-value>other</stored-value>
      </pair>
    </value-pairs>
    
