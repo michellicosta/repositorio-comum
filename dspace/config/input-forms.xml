@@ -831,7 +831,8 @@
          <dc-qualifier></dc-qualifier>
          <repeatable>true</repeatable>
          <label>Palavras-chave:</label>
-         <input-type value-pairs-name="common_languages">qualdrop_language</input-type>
+         <!-- <input-type value-pairs-name="common_languages">qualdrop_language</input-type> -->
+		 <input-type>textarea</input-type>
          <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe as palavras-chave do documento descrito. Sugere-se também o uso de termos em inglês.</hint>
          <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Informe as palavras-chave do documento descrito. Sugere-se também o uso de termos em inglês.&lt;/font&gt;</required>
        </field>
@@ -866,7 +867,8 @@
          <dc-qualifier>abstract</dc-qualifier>
          <repeatable>true</repeatable>
          <label>Abstract:</label>
-         <input-type value-pairs-name="common_languages">qualdrop_textarea_language</input-type>
+         <!-- <input-type value-pairs-name="common_languages">qualdrop_textarea_language</input-type> -->
+		 <input-type>textarea</input-type>
          <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Abstract do documento. Preencha com o resumo em língua estrangeira.</hint>
          <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Abstract do documento. Preencha com o resumo em língua estrangeira. &lt;/font&gt;</required>
        </field>  
