@@ -801,7 +801,7 @@
          <dc-qualifier>isbn</dc-qualifier>
          <repeatable>false</repeatable>
          <label>Informe o ISBN:</label>
-		 <type-bind>article, conferenceObject, book, bookPart</type-bind>
+		 <type-bind>book, bookPart</type-bind>
          <input-type>onebox</input-type>
          <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe o ISBN.</hint>
          <required></required>
@@ -814,7 +814,7 @@
          <dc-qualifier>issn</dc-qualifier>
          <repeatable>false</repeatable>
          <label>Informe o ISSN:</label>
-		 <type-bind>article, conferenceObject, book, bookPart</type-bind>
+		 <type-bind>article, conferenceObject</type-bind>
          <input-type>onebox</input-type>
          <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe o ISSN.</hint>
          <required></required>
