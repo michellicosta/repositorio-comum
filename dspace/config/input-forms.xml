@@ -466,7 +466,8 @@
          <dc-qualifier>advisor-co2Lattes</dc-qualifier>
          <repeatable>false</repeatable>
          <label>&lt;a href="http://buscatextual.cnpq.br/buscatextual/busca.do?metodo=apresentar" target="_blank" &gt;URL do Currículo Lattes&lt;/a&gt; do segundo coorientador:</label>
-         <input-type>onebox</input-type>
+		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind> 
+		<input-type>onebox</input-type>
          <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe a URL do currículo lattes do segundo coorientador.</hint>
          <required></required>
        </field>
