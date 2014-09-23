@@ -832,7 +832,7 @@
          <repeatable>true</repeatable>
          <label>Palavras-chave:</label>
          <!-- <input-type value-pairs-name="common_languages">qualdrop_language</input-type> -->
-		 <input-type>textarea</input-type>
+		 <input-type>twobox</input-type>
          <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe as palavras-chave do documento descrito. Sugere-se também o uso de termos em inglês.</hint>
          <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Informe as palavras-chave do documento descrito. Sugere-se também o uso de termos em inglês.&lt;/font&gt;</required>
        </field>
@@ -843,10 +843,11 @@
          <dc-qualifier>cnpq</dc-qualifier>
          <repeatable>true</repeatable>
          <label>Áreas de conhecimento de acordo com tabela do CNPq:</label>
-		 <input-type>textarea</input-type> 
+		 <!-- <input-type>textarea</input-type>  -->
+		 <input-type>onebox</input-type> 
          <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt;Selecione a(s) área(s) de conhecimento correspondente(s), de acordo com tabela do CNPq.</hint>
          <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Selecione a(s) área(s) de conhecimento correspondente(s), de acordo com tabela do CNPq. &lt;/font&gt;</required>
- 		 <!--  <vocabulary>cnpq</vocabulary> -->
+ 		 <!-- <vocabulary>cnpq</vocabulary> -->
 	</field>
 	 
 	 
