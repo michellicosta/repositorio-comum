@@ -97,9 +97,9 @@
 		 <dc-schema>dc</dc-schema>
          <dc-element>contributor</dc-element>
          <dc-qualifier>author</dc-qualifier>
-		 <type-bind>article, conferenceObject, book, bookPart, report, other</type-bind>
          <repeatable>true</repeatable>
          <label>Autor(es):</label>
+		 <type-bind>article, conferenceObject, book, bookPart, report, other</type-bind>
          <input-type>name</input-type>
          <hint>&lt;div class="alert alert-info"&gt;
 		 Descrição do &lt;strong&gt;AUTOR&lt;/strong&gt;
@@ -114,9 +114,9 @@
          <dc-schema>dc</dc-schema>
          <dc-element>date</dc-element>
          <dc-qualifier>issued</dc-qualifier>
-		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <repeatable>false</repeatable>
          <label>Data da defesa:</label>
+		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <input-type>date</input-type>
          <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe a data de defesa do documento descrito, ou seja, a data de defesa da tese ou dissertação. </hint>
          <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Informe a data de defesa do documento descrito, ou seja, a data de defesa da tese ou dissertação. &lt;/font&gt;</required>
@@ -126,9 +126,9 @@
          <dc-schema>dc</dc-schema>
          <dc-element>date</dc-element>
          <dc-qualifier>issued</dc-qualifier>
-		 <type-bind>article, conferenceObject, book, bookPart, report, other</type-bind>
          <repeatable>false</repeatable>
          <label>Data da publicação:</label>
+		 <type-bind>article, conferenceObject, book, bookPart, report, other</type-bind>
          <input-type>date</input-type>
          <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe a data da publicação do documento descrito. </hint>
          <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Informe a data da publicação do documento descrito. &lt;/font&gt;</required>
@@ -158,9 +158,9 @@
 		 <dc-schema>dc</dc-schema>
          <dc-element>contributor</dc-element>
          <dc-qualifier>author</dc-qualifier>
-		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <repeatable>false</repeatable>
          <label>Autor:</label>
+		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <input-type>name</input-type>
          <hint>&lt;div class="alert alert-info"&gt;
 		 Descrição do &lt;strong&gt;AUTOR&lt;/strong&gt;
@@ -175,9 +175,9 @@
 		 <dc-schema>dc</dc-schema>
          <dc-element>contributor</dc-element>
          <dc-qualifier>authorLattes</dc-qualifier>
-		  <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <repeatable>false</repeatable>
          <label>&lt;a href="http://buscatextual.cnpq.br/buscatextual/busca.do?metodo=apresentar" target="_blank" &gt;URL do Currículo Lattes&lt;/a&gt; do autor:</label>
+		  <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <input-type>onebox</input-type>
          <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe a URL do currículo lattes do autor.</hint>
          <required></required>
@@ -187,9 +187,9 @@
 		 <dc-schema>dc</dc-schema>
          <dc-element>contributor</dc-element>
          <dc-qualifier>authorID</dc-qualifier>
-		  <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <repeatable>true</repeatable>
          <label>Identificador único do autor:</label>
+		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <input-type>onebox</input-type>
          <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe o identificador único do autor (CPF, ID de autor privativa da instituição ou passaporte).</hint>
          <required></required>
@@ -201,9 +201,9 @@
 		 <dc-schema>dc</dc-schema>
          <dc-element>contributor</dc-element>
          <dc-qualifier>advisor</dc-qualifier>
-		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis, report</type-bind>
          <repeatable>false</repeatable>
          <label>Orientador:</label>
+		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis, report</type-bind>
          <input-type>name</input-type>
          <hint>&lt;div class="alert alert-info"&gt;Descrição do &lt;strong&gt;ORIENTADOR&lt;/strong&gt;
 		       &lt;a href="help/submit-help.html#id-orientador" style="float:right" tooltiped="" &gt;Exemplos&lt;/a&gt;
@@ -217,9 +217,9 @@
 		 <dc-schema>dc</dc-schema>
          <dc-element>contributor</dc-element>
          <dc-qualifier>advisorLattes</dc-qualifier>
-		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <repeatable>false</repeatable>
          <label>&lt;a href="http://buscatextual.cnpq.br/buscatextual/busca.do?metodo=apresentar" target="_blank" &gt;URL do Currículo Lattes&lt;/a&gt; do orientador:</label>
+		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <input-type>onebox</input-type>
          <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe a URL do currículo lattes do orientador.</hint>
          <required></required>
@@ -229,9 +229,9 @@
 		 <dc-schema>dc</dc-schema>
          <dc-element>contributor</dc-element>
          <dc-qualifier>advisorID</dc-qualifier>
-		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <repeatable>true</repeatable>
          <label>Identificador único do orientador:</label>
+		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <input-type>onebox</input-type>
          <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe o identificador único do orientador(CPF, ID de autor privativa da instituição ou passaporte).</hint>
          <required></required>
@@ -246,7 +246,7 @@
          <dc-qualifier>ispartof</dc-qualifier>
          <repeatable>false</repeatable>
          <label>Título do periódico:</label>
-		 <type-bind>article<type-bind>
+		 <type-bind>article</type-bind>
          <input-type>onebox</input-type>
          <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe o título do periódico. &lt;/font&gt;</hint>
          <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Informe o título do periódico.&lt;/font&gt;</required>
@@ -256,9 +256,9 @@
 		 <dc-schema>dc</dc-schema>
          <dc-element>relation</dc-element>
          <dc-qualifier>ispartof</dc-qualifier>
-		 <type-bind>conferenceObject<type-bind>
          <repeatable>false</repeatable>
          <label>Título do evento:</label>
+		 <type-bind>conferenceObject</type-bind>
          <input-type>onebox</input-type>
          <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe o título do evento. &lt;/font&gt;</hint>
          <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Informe o título do evento.&lt;/font&gt;</required>
@@ -268,9 +268,9 @@
 		 <dc-schema>dc</dc-schema>
          <dc-element>relation</dc-element>
          <dc-qualifier>ispartof</dc-qualifier>
-		 <type-bind>book<type-bind>
          <repeatable>false</repeatable>
          <label>Título da coleção:</label>
+		 <type-bind>book</type-bind>
          <input-type>onebox</input-type>
          <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe o título da coleção. &lt;/font&gt;</hint>
          <required></required>
@@ -280,9 +280,9 @@
 		 <dc-schema>dc</dc-schema>
          <dc-element>relation</dc-element>
          <dc-qualifier>ispartof</dc-qualifier>
-		 <type-bind>report<type-bind>
          <repeatable>false</repeatable>
          <label>Título da pesquisa:</label>
+		 <type-bind>report</type-bind>
          <input-type>onebox</input-type>
          <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe o título da pesquisa. &lt;/font&gt;</hint>
          <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Informe o título da pesquisa.&lt;/font&gt;</required>
@@ -292,9 +292,9 @@
 		 <dc-schema>dc</dc-schema>
          <dc-element>relation</dc-element>
          <dc-qualifier>ispartof</dc-qualifier>
-		 <type-bind>bookpart<type-bind>
          <repeatable>false</repeatable>
          <label>Título do livro:</label>
+		 <type-bind>bookpart</type-bind>
          <input-type>onebox</input-type>
          <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe o título do livro. &lt;/font&gt;</hint>
          <required>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe o título do livro. &lt;/font&gt;</required>
@@ -305,9 +305,9 @@
 		 <dc-schema>dc</dc-schema>
          <dc-element>citation</dc-element>
          <dc-qualifier>volume</dc-qualifier>
-		 <type-bind>article<type-bind>
          <repeatable>false</repeatable>
          <label>Volume do periódico:</label>
+		 <type-bind>article</type-bind>
          <input-type>onebox</input-type>
          <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe o volume do periódico.</hint>
          <required></required>
@@ -317,9 +317,9 @@
 		 <dc-schema>dc</dc-schema>
          <dc-element>citation</dc-element>
          <dc-qualifier>issue</dc-qualifier>
-		 <type-bind>article<type-bind>
          <repeatable>false</repeatable>
          <label>Número de edição do periódico:</label>
+		 <type-bind>article</type-bind>
          <input-type>onebox</input-type>
          <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe o número de edição do periódico.</hint>
          <required></required>
@@ -329,9 +329,9 @@
 		 <dc-schema>dc</dc-schema>
          <dc-element>citation</dc-element>
          <dc-qualifier>issue</dc-qualifier>
-		 <type-bind>conferenceObject<type-bind>
          <repeatable>false</repeatable>
          <label>Número de edição do evento:</label>
+		 <type-bind>conferenceObject</type-bind>
          <input-type>onebox</input-type>
          <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe o número de edição do evento.</hint>
          <required>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe o número de edição do evento.</required>
@@ -341,9 +341,9 @@
 		 <dc-schema>dc</dc-schema>
          <dc-element>citation</dc-element>
          <dc-qualifier>issue</dc-qualifier>
-		 <type-bind>book<type-bind>
          <repeatable>false</repeatable>
          <label>Número do livro na coleção:</label>
+		 <type-bind>book</type-bind>
          <input-type>onebox</input-type>
          <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe o número do livro na coleção.</hint>
          <required></required>
@@ -353,9 +353,9 @@
 		 <dc-schema>dc</dc-schema>
          <dc-element>citation</dc-element>
          <dc-qualifier>spage</dc-qualifier>
-		 <type-bind>article, bookPart<type-bind>
          <repeatable>false</repeatable>
          <label>Página inicial:</label>
+		 <type-bind>article, bookPart</type-bind>
          <input-type>onebox</input-type>
          <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe a página inicial.</hint>
          <required></required>
@@ -365,9 +365,9 @@
 		 <dc-schema>dc</dc-schema>
          <dc-element>citation</dc-element>
          <dc-qualifier>epage</dc-qualifier>
-		 <type-bind>article, bookPart<type-bind>
          <repeatable>false</repeatable>
          <label>Página final:</label>
+		 <type-bind>article, bookPart</type-bind>
          <input-type>onebox</input-type>
          <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe a página final.</hint>
          <required></required>
@@ -377,9 +377,9 @@
 		 <dc-schema>dc</dc-schema>
          <dc-element>audience</dc-element>
          <dc-qualifier>educationlevel</dc-qualifier>
-		 <type-bind>other<type-bind>
          <repeatable>false</repeatable>
          <label>Nível educacional:</label>
+		 <type-bind>other</type-bind>
          <input-type>onebox</input-type>
          <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe o nível educacional.</hint>
          <required></required>
@@ -388,17 +388,17 @@
 	   <field>
          <dc-schema>dc</dc-schema>
          <dc-element>description</dc-element>
-		 <type-bind>other</type-bind>
          <dc-qualifier></dc-qualifier>
          <repeatable>true</repeatable>
          <label>Objetivo:</label>
+		 <type-bind>other</type-bind>
          <input-type>onebox</input-type>
          <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informar o objetivo. </hint>
          <required></required>
        </field>
+	   
 	</page>
 		
-	</page>
     <page number="4"> 
 	
 	   <!-- PRIMEIRO CO-ORIENTADOR -->
@@ -407,9 +407,9 @@
 		 <dc-schema>dc</dc-schema>
          <dc-element>contributor</dc-element>
          <dc-qualifier>advisor-co1</dc-qualifier>
-		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <repeatable>false</repeatable>
          <label>Primeiro coorientador:</label>
+		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <input-type>name</input-type>
          <hint>&lt;div class="alert alert-info"&gt;Se houver, descrição do &lt;strong&gt;PRIMEIRO CO-ORIENTADOR&lt;/strong&gt;
 		       &lt;a href="help/submit-help.html#id-coorientador" tooltiped="" style="float:right" href="#" &gt;Exemplos&lt;/a&gt;
@@ -422,10 +422,10 @@
 		 <dc-schema>dc</dc-schema>
          <dc-element>contributor</dc-element>
          <dc-qualifier>advisor-co1Lattes</dc-qualifier>
-		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <repeatable>false</repeatable>
          <label>&lt;a href="http://buscatextual.cnpq.br/buscatextual/busca.do?metodo=apresentar" target="_blank" &gt;URL do Currículo Lattes&lt;/a&gt; do primeiro coorientador:</label>
-         <input-type>onebox</input-type>
+		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind> 
+		 <input-type>onebox</input-type>
          <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe a URL do currículo lattes do primeiro coorientador.</hint>
          <required></required>
        </field>
@@ -434,9 +434,9 @@
 		 <dc-schema>dc</dc-schema>
          <dc-element>contributor</dc-element>
          <dc-qualifier>advisor-co1ID</dc-qualifier>
-		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <repeatable>true</repeatable>
          <label>Identificador único do primeiro coorientador:</label>
+		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <input-type>onebox</input-type>
          <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe o identificador único do primeiro coorientador(CPF, ID de autor privativa da instituição ou passaporte).</hint>
          <required></required>
@@ -449,9 +449,9 @@
 		 <dc-schema>dc</dc-schema>
          <dc-element>contributor</dc-element>
          <dc-qualifier>advisor-co2</dc-qualifier>
-		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <repeatable>false</repeatable>
          <label>Segundo coorientador:</label>
+		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <input-type>name</input-type>
          <hint>&lt;div class="alert alert-info"&gt;Se houver, descrição do &lt;strong&gt;SEGUNDO CO-ORIENTADOR&lt;/strong&gt;
 		       &lt;a href="help/submit-help.html#id-coorientador" tooltiped="" style="float:right" href="#" &gt;Exemplos&lt;/a&gt;
@@ -464,7 +464,6 @@
 		 <dc-schema>dc</dc-schema>
          <dc-element>contributor</dc-element>
          <dc-qualifier>advisor-co2Lattes</dc-qualifier>
-		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <repeatable>false</repeatable>
          <label>&lt;a href="http://buscatextual.cnpq.br/buscatextual/busca.do?metodo=apresentar" target="_blank" &gt;URL do Currículo Lattes&lt;/a&gt; do segundo coorientador:</label>
          <input-type>onebox</input-type>
@@ -476,9 +475,9 @@
 		 <dc-schema>dc</dc-schema>
          <dc-element>contributor</dc-element>
          <dc-qualifier>advisor-co2ID</dc-qualifier>
-		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <repeatable>true</repeatable>
          <label>Identificador único do segundo coorientador:</label>
+		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <input-type>onebox</input-type>
          <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe o identificador único do segundo coorientador (CPF, ID de autor privativa da instituição ou passaporte).</hint>
          <required></required>
@@ -495,9 +494,9 @@
 		 <dc-schema>dc</dc-schema>
          <dc-element>contributor</dc-element>
          <dc-qualifier>referees1</dc-qualifier>
-		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <repeatable>false</repeatable>
          <label>Primeiro membro da banca:</label>
+		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <input-type>name</input-type>
          <hint>&lt;div class="alert alert-info"&gt;Descrição do &lt;strong&gt;PRIMEIRO MEMBRO DA BANCA&lt;/strong&gt;
 			   &lt;a style="float:right" href="help/submit-help.html#id-membros-banca" tooltiped="" &gt;Exemplos&lt;/a&gt;
@@ -510,9 +509,9 @@
 		 <dc-schema>dc</dc-schema>
          <dc-element>contributor</dc-element>
          <dc-qualifier>referees1Lattes</dc-qualifier>
-		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <repeatable>false</repeatable>
          <label>&lt;a href="http://buscatextual.cnpq.br/buscatextual/busca.do?metodo=apresentar" target="_blank" &gt;URL do Currículo Lattes&lt;/a&gt; do primeiro membro da banca:</label>
+		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <input-type>onebox</input-type>
          <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe a URL do currículo lattes do primeiro membro da banca.</hint>
          <required></required>
@@ -522,9 +521,9 @@
 		 <dc-schema>dc</dc-schema>
          <dc-element>contributor</dc-element>
          <dc-qualifier>referees1ID</dc-qualifier>
-		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <repeatable>true</repeatable>
          <label>Identificador único do primeiro membro da banca</label>
+		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <input-type>onebox</input-type>
          <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe o identificador único do primeiro membro da banca(CPF, ID de autor privativa da instituição ou passaporte).</hint>
          <required></required>
@@ -537,9 +536,9 @@
 		 <dc-schema>dc</dc-schema>
          <dc-element>contributor</dc-element>
          <dc-qualifier>referees2</dc-qualifier>
-		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <repeatable>false</repeatable>
          <label>Segundo membro da banca:</label>
+		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <input-type>name</input-type>
          <hint>&lt;div class="alert alert-info"&gt;Se houver, descrição do &lt;strong&gt;SEGUNDO MEMBRO DA BANCA&lt;/strong&gt;
 		       &lt;a style="float:right" href="help/submit-help.html#id-membros-banca" tooltiped="" &gt;Exemplos&lt;/a&gt;
@@ -553,9 +552,9 @@
 		 <dc-schema>dc</dc-schema>
          <dc-element>contributor</dc-element>
          <dc-qualifier>referees2Lattes</dc-qualifier>
-		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <repeatable>false</repeatable>
          <label>&lt;a href="http://buscatextual.cnpq.br/buscatextual/busca.do?metodo=apresentar" target="_blank" &gt;URL do Currículo Lattes&lt;/a&gt; do segundo membro da banca:</label>
+		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <input-type>onebox</input-type>
          <hint> &lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe a URL do currículo lattes do segundo membro da banca.</hint>
          <required></required>
@@ -565,9 +564,9 @@
 		 <dc-schema>dc</dc-schema>
          <dc-element>contributor</dc-element>
          <dc-qualifier>referees2ID</dc-qualifier>
-		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <repeatable>true</repeatable>
          <label>Identificador único do segundo membro da banca</label>
+		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <input-type>onebox</input-type>
          <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe o identificador único do segundo membro da banca(CPF, ID de autor privativa da instituição ou passaporte).</hint>
          <required></required>
@@ -579,9 +578,9 @@
 		 <dc-schema>dc</dc-schema>
          <dc-element>contributor</dc-element>
          <dc-qualifier>referees3</dc-qualifier>
-		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <repeatable>false</repeatable>
          <label>Terceiro membro da banca:</label>
+		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <input-type>name</input-type>
          <hint>&lt;div class="alert alert-info"&gt;Se houver, descrição do &lt;strong&gt;TERCEIRO MEMBRO DA BANCA&lt;/strong&gt;
 		       &lt;a style="float:right" href="help/submit-help.html#id-membros-banca" tooltiped=""&gt;Exemplos&lt;/a&gt;
@@ -594,9 +593,9 @@
 		 <dc-schema>dc</dc-schema>
          <dc-element>contributor</dc-element>
          <dc-qualifier>referees3Lattes</dc-qualifier>
-		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <repeatable>false</repeatable>
          <label>&lt;a href="http://buscatextual.cnpq.br/buscatextual/busca.do?metodo=apresentar" target="_blank" &gt;URL do Currículo Lattes&lt;/a&gt; do terceiro membro da banca:</label>
+		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <input-type>onebox</input-type>
          <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe a URL do currículo lattes do terceiro membro da banca.</hint>
          <required></required>
@@ -606,9 +605,9 @@
 		 <dc-schema>dc</dc-schema>
          <dc-element>contributor</dc-element>
          <dc-qualifier>referees3ID</dc-qualifier>
-		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <repeatable>true</repeatable>
          <label>Identificador único do terceiro membro da banca</label>
+		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <input-type>onebox</input-type>
          <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe o identificador único do terceiro membro da banca(CPF, ID de autor privativa da instituição ou passaporte).</hint>
          <required></required>
@@ -620,9 +619,9 @@
 		 <dc-schema>dc</dc-schema>
          <dc-element>contributor</dc-element>
          <dc-qualifier>referees4</dc-qualifier>
-		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <repeatable>false</repeatable>
          <label>Quarto membro da banca:</label>
+		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <input-type>name</input-type>
          <hint>&lt;div class="alert alert-info"&gt;Se houver, descrição do &lt;strong&gt;QUARTO MEMBRO DA BANCA&lt;/strong&gt;
 		       &lt;a style="float:right" href="help/submit-help.html#id-membros-banca" tooltiped=""&gt;Exemplos&lt;/a&gt;
@@ -635,9 +634,9 @@
 		 <dc-schema>dc</dc-schema>
          <dc-element>contributor</dc-element>
          <dc-qualifier>referees4Lattes</dc-qualifier>
-		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <repeatable>false</repeatable>
          <label>&lt;a href="http://buscatextual.cnpq.br/buscatextual/busca.do?metodo=apresentar" target="_blank" &gt;URL do Currículo Lattes&lt;/a&gt; do quarto membro da banca:</label>
+		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <input-type>onebox</input-type>
          <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe a URL do currículo lattes do quarto membro da banca.</hint>
          <required></required>
@@ -647,9 +646,9 @@
 		 <dc-schema>dc</dc-schema>
          <dc-element>contributor</dc-element>
          <dc-qualifier>referees4ID</dc-qualifier>
-		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <repeatable>true</repeatable>
          <label>Identificador único do quarto quarto da banca</label>
+		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <input-type>onebox</input-type>
          <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe o identificador único do quarto membro da banca(CPF, ID de autor privativa da instituição ou passaporte).</hint>
          <required></required>
@@ -661,9 +660,9 @@
 		 <dc-schema>dc</dc-schema>
          <dc-element>contributor</dc-element>
          <dc-qualifier>referees5</dc-qualifier>
-		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <repeatable>false</repeatable>
          <label>Quinto membro da banca:</label>
+		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <input-type>name</input-type>
          <hint>&lt;div class="alert alert-info"&gt;Se houver, descrição do &lt;strong&gt;QUINTO MEMBRO DA BANCA&lt;/strong&gt;
 		       &lt;a style="float:right" href="help/submit-help.html#id-membros-banca" tooltiped=""&gt;Exemplos&lt;/a&gt;
@@ -676,9 +675,9 @@
 		 <dc-schema>dc</dc-schema>
          <dc-element>contributor</dc-element>
          <dc-qualifier>referees5Lattes</dc-qualifier>
-		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <repeatable>false</repeatable>
          <label>&lt;a href="http://buscatextual.cnpq.br/buscatextual/busca.do?metodo=apresentar" target="_blank" &gt;URL do Currículo Lattes&lt;/a&gt; do quinto  membro da banca:</label>
+		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <input-type>onebox</input-type>
          <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe a URL do currículo lattes do quinto  membro da banca.</hint>
          <required></required>
@@ -688,9 +687,9 @@
 		 <dc-schema>dc</dc-schema>
          <dc-element>contributor</dc-element>
          <dc-qualifier>referees5ID</dc-qualifier>
-		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <repeatable>true</repeatable>
          <label>Identificador único do quinto quarto da banca</label>
+		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <input-type>onebox</input-type>
          <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe o identificador único do quinto membro da banca(CPF, ID de autor privativa da instituição ou passaporte).</hint>
          <required></required>
@@ -728,9 +727,9 @@
          <dc-schema>dc</dc-schema>
          <dc-element>publisher</dc-element>
          <dc-qualifier>department</dc-qualifier>
-		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <repeatable>true</repeatable>
          <label>Faculdade, Instituto ou Departamento:</label>
+		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <input-type>onebox</input-type>
          <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Nome, por extenso, da unidade acadêmica: faculdade, escola, instituto, departamento ou estrutura equivalente.</hint>
          <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Nome, por extenso, da unidade acadêmica: faculdade, escola, instituto, departamento ou estrutura equivalente.&lt;/font&gt;</required>
@@ -741,11 +740,10 @@
          <dc-schema>dc</dc-schema>
          <dc-element>publisher</dc-element>
          <dc-qualifier>program</dc-qualifier>
-		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <repeatable>true</repeatable>
          <label>Nome(s) do(s) programa(s) de pós-graduação por extenso:</label>
+		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <input-type>onebox</input-type>
-		 <!-- &lt;br&gt;&lt;font color="red"&gt;Mantenha a tecla&lt;/font&gt;  &lt;code&gt;"Ctrl"&lt;/code&gt;  &lt;font color="red"&gt;pressionada para selecionar mais de um valor. &lt;/font&gt; -->
          <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Nome(s) do(s) programa(s) de pós-graduação por extenso.</hint>
          <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Nome(s) do(s) programa(s) de pós-graduação por extenso.&lt;/font&gt;</required>
        </field>
@@ -757,8 +755,7 @@
          <dc-qualifier>country</dc-qualifier>
          <repeatable>false</repeatable>
          <label>País:</label>
-		 <!-- <input-type>onebox</input-type> -->
-          <input-type value-pairs-name="common_publisher_country">dropdown</input-type> -->
+          <input-type value-pairs-name="common_publisher_country">dropdown</input-type> 
          <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe o país.</hint>
          <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Informe o país.&lt;/font&gt;</required>
        </field>
@@ -769,7 +766,6 @@
          <dc-qualifier></dc-qualifier>
          <repeatable>false</repeatable>
          <label>Idioma:</label>
-		 <!-- <input-type>onebox</input-type> -->
          <input-type value-pairs-name="common_languages">dropdown</input-type> 
          <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe o idioma em que o documento está escrito.</hint>
          <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Informe o idioma em que o documento está escrito.&lt;/font&gt;</required>
@@ -779,9 +775,9 @@
          <dc-schema>dc</dc-schema>
          <dc-element>relation</dc-element>
          <dc-qualifier>references</dc-qualifier>
-		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <repeatable>false</repeatable>
          <label>Referências:</label>
+		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <input-type>textarea</input-type>
          <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informes as referências citadas no documento. </hint>
          <required></required>
@@ -803,9 +799,9 @@
          <dc-schema>dc</dc-schema>
          <dc-element>identifier</dc-element>
          <dc-qualifier>isbn</dc-qualifier>
-		 <type-bind>article, conferenceObject, book, bookPart</type-bind>
          <repeatable>false</repeatable>
          <label>Informe o ISBN:</label>
+		 <type-bind>article, conferenceObject, book, bookPart</type-bind>
          <input-type>onebox</input-type>
          <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe o ISBN.</hint>
          <required></required>
@@ -816,9 +812,9 @@
          <dc-schema>dc</dc-schema>
          <dc-element>identifier</dc-element>
          <dc-qualifier>issn</dc-qualifier>
-		 <type-bind>article, conferenceObject, book, bookPart</type-bind>
          <repeatable>false</repeatable>
          <label>Informe o ISSN:</label>
+		 <type-bind>article, conferenceObject, book, bookPart</type-bind>
          <input-type>onebox</input-type>
          <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe o ISSN.</hint>
          <required></required>
@@ -847,12 +843,10 @@
          <repeatable>true</repeatable>
          <label>Áreas de conhecimento de acordo com tabela do CNPq:</label>
 		 <input-type>textarea</input-type> 
-		 <!-- <vocabulary>cnpq</vocabulary>  -->
-		 <!-- <vocabulary closed="true">cnpq</vocabulary> -->
-		 <input-type>onebox</input-type>
          <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt;Selecione a(s) área(s) de conhecimento correspondente(s), de acordo com tabela do CNPq.</hint>
          <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Selecione a(s) área(s) de conhecimento correspondente(s), de acordo com tabela do CNPq. &lt;/font&gt;</required>
-       </field>
+ 		 <vocabulary>cnpq</vocabulary> 
+	</field>
 	 
 	 
 	<field>
@@ -882,9 +876,9 @@
          <dc-schema>dc</dc-schema>
          <dc-element>description</dc-element>
          <dc-qualifier>sponsorship</dc-qualifier>
-		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <repeatable>true</repeatable>
          <label>Agência(s) de &lt;br&gt; fomento:</label>
+		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <input-type>onebox</input-type>
          <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Agência(s) de fomento que auxiliou(ram) o pesquisador.</hint>
          <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Agência(s) de fomento que auxiliou(ram) o pesquisador. &lt;/font&gt;</required>
@@ -894,27 +888,28 @@
 	   <field>
          <dc-schema>dc</dc-schema>
          <dc-element>relation</dc-element>
-		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <dc-qualifier></dc-qualifier>
          <repeatable>true</repeatable>
          <label>Relação:</label>
+		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <input-type>textarea</input-type>
          <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Outros recursos utilizados para elaboração deste documento. </hint>
          <required></required>
        </field>
-	</page>
 	
-	<field>
+	  <field>
          <dc-schema>dc</dc-schema>
          <dc-element>description</dc-element>
-		 <type-bind>book</type-bind>
          <dc-qualifier></dc-qualifier>
          <repeatable>true</repeatable>
          <label>Notas sobre o livro:</label>
+		 <type-bind>book</type-bind>
          <input-type>textarea</input-type>
          <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informar o sumário do livro. </hint>
          <required></required>
        </field>
+	   
+	   
 	</page>
 	
 	
