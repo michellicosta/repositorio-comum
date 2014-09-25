@@ -58,11 +58,11 @@
 
 
 <dspace:layout locbar="nolink" titlekey="jsp.home.title" feedData="<%= feedData %>">
-		
 
-
-	<div class="container top-search-container ">
+	<div class="container">
 		<form method="get" action="<%= request.getContextPath() %>/simple-search" class="form-horizontal col-md-12 form-group form-group-lg" scope="search" role="form">
+		<div id="logo-deposita" class="col-md-11 text-center">
+		</div>
 		<div class="col-md-11">
 	   		<input type="text" class="form-control " placeholder="<fmt:message key="jsp.layout.navbar-default.search"/>" name="query" id="tequery" size="25"/>
 		</div>				
@@ -75,7 +75,6 @@
 <div class="container row">
 
     <% request.setAttribute("createRootDiv", false); %>
-	<%@ include file="discovery/cloud-tag.jsp" %>
 	
 	<%@ include file="discovery/static-sidebar-facet.jsp" %>
 </div>

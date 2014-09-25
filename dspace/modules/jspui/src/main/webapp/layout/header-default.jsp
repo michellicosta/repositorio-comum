@@ -185,19 +185,6 @@ for (int i = 0; i < supportedLocales.length; i++)
 %>
 </div>
 
-	<div class="row">
-		<div class="col-md-10">
-			<div>
-				<a href="<%= request.getContextPath() %>">
-	        		<img class="pull-left" src="<%= request.getContextPath() %>/image/logo-repositorio-comum.png">
-				</a>
-			</div>
-        	<div class="repo-description">
-				<h1><%= ConfigurationManager.getProperty("dspace.name") %></h1>
-	        	<h4><fmt:message key="jsp.home.dspace.heading.type"/> </h4>
-        	</div>
-        </div>
-	</div>
 </div>	
 
 

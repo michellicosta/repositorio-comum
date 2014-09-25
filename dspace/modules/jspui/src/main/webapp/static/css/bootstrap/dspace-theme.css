@@ -562,3 +562,20 @@ font-size: 40px;
 
 /** Fim: Delimitação de sublinado em links **/
 
+/** Tratamento do logo **/
+#logo-deposita {
+	
+	margin-bottom: 30px;
+	background-image: url("../../../image/logo-deposita.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 207px;
+}
+
+/** Aplica borda nas barras de navegação (topo e rodapé) **/
+.navbar {
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
