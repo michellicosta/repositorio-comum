@@ -74,13 +74,10 @@ input.ds-authority-lock.is-unlocked
 
 	Definição de cores:
 	
-		 Cor padrão do topo: #088a29
-		 Cor para itens selecionados e fundo de topo de paineis: #449d44
-		 Fundo claro: #f1ffee
-		 Cor da borda: #7aa97a
-		 Cor da borda clara: #bed7be
-		 Verde escuro: #006633
-		 Cinza claro: #f3f3f3
+	Azul logo: #00679a
+	Azul claro: #EBF7FB
+	Borda do azul claro: #CCEBFF
+	
 **/
 
 /** Linhas de tabelas **/
@@ -306,13 +303,6 @@ a:hover, a:focus {
     border-color: #088a29; */
 }
 
-.addongreen {
-	/* border: #7aa97a;
-	background-color: #449d44;
-    border-color: #088a29; */
-	color: white;	
-}
-
 .addongreen .form-control
 {
 	/* border-color: #7aa97a; */
@@ -463,7 +453,6 @@ code {
 }
 
 #browse_navigation a {
-	font-size: 15px;
 	font-weight: bold;
 }
 
@@ -496,10 +485,10 @@ code {
 
 /** Aplicabilidade nas tabelas **/
 .table > tbody > tr:nth-child(2n+1) > td {
-	background-color: #f1ffee;
+	background-color: #EBF7FB;
 }
 .table > tbody > tr:nth-child(2n+1) > th {
-	background-color: #f3f3f3;
+	background-color: #EBF7FB;
 }
 
 /** Espaçamento entre labels da submissão e seus textos **/
@@ -564,13 +553,7 @@ font-size: 40px;
 
 /** Tratamento do logo **/
 #logo-deposita {
-	
 	margin-bottom: 30px;
-	background-image: url("../../../image/logo-deposita.png");
-	background-position: center;
-	background-repeat: no-repeat;
-	width: 100%;
-	height: 207px;
 }
 
 /** Aplica borda nas barras de navegação (topo e rodapé) **/
@@ -578,4 +561,48 @@ font-size: 40px;
 	-webkit-border-radius: 15px;
 	-moz-border-radius: 15px;
 	border-radius: 15px;
+}
+
+/** Modifica fonte padrão do tema **/
+body {
+	font-family: Helvetica,Arial,sans-serif;
+}
+
+/** Modifica fundo da caixa de busca da página inicial **/
+.searchbox {
+	background-color: #00679a;
+	padding: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	margin-bottom: 30px;
+}
+
+.searchbox .glyphicon-search {
+	font-size: 22px;
+}
+
+#tequery-main-page {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	font-weight: bold;
+	font-size: 22px;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    font-weight: normal;
+    font-style: italic;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    font-weight: normal;
+    font-style: italic;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    font-weight: normal;
+    font-style: italic;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    font-weight: normal;
+    font-style: italic;
 }

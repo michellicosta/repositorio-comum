@@ -10,11 +10,11 @@
 	width: 163px;
 } 
 .border-socialnetwork{
-	border-top: 1px solid #bed7be;
-	border-bottom: 1px solid #bed7be;
+	border-top: 1px solid #CCEBFF;
+	border-bottom: 1px solid #CCEBFF;
 }
 .border-socialnetwork td {
-	background-color: #f1ffee;	
+	background-color: #EBF7FB;	
 }
 
 .social-label {
@@ -51,3 +51,4 @@ display: none !important;
 .navbar-bottom {
 	z-index: 0;
 }
+

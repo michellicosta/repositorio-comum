@@ -110,9 +110,9 @@
 		    <li class="<%= ((currentPage.endsWith( "harvesting.jsp" ) || currentPage.endsWith( "faq.jsp" ) || currentPage.endsWith( "/help" )) ? "active" : "" ) %>" class="dropdown">
              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><fmt:message key="jsp.layout.navbar-default.help"/> <b class="caret"></b></a>
              <ul class="dropdown-menu">
-				<li><a href="<%= request.getContextPath() %>/static/harvesting.jsp"><fmt:message key="jsp.layout.navbar-default.harvesting"/></a></li>
-				<li><a href="<%= request.getContextPath() %>/static/faq.jsp"><fmt:message key="jsp.layout.navbar-default.faq"/></a></li>
-				<li><dspace:popup page="<%= LocaleSupport.getLocalizedMessage(pageContext, \"help.index\") %>"><fmt:message key="jsp.layout.navbar-default.helpstandard"/></dspace:popup></li>
+				<li><a href="<%= request.getContextPath() %>/static/deposit-manual.jsp"><fmt:message key="jsp.layout.navbar-default.manual"/></a></li>
+				<li><a href="<%= request.getContextPath() %>/static/work-manual.jsp"><fmt:message key="jsp.layout.navbar-default.workmanual"/></a></li>
+				<li><dspace:popup page="<%= LocaleSupport.getLocalizedMessage(pageContext, \"help.index\") %>"><fmt:message key="jsp.layout.navbar-default.questions"/></dspace:popup></li>
 			</ul>
 		    </li>
 		    
