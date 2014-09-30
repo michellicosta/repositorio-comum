@@ -99,6 +99,18 @@
          <required></required>
       </field>   
  -->
+ 
+	   <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>publisher</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Nome da instituição por extenso:</label>
+<!--		 <input-type value-pairs-name="common_ies">dropdown</input-type> -->
+         <input-type>onebox</input-type>
+         <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Nome da instituição por extenso.</hint>
+		 <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Nome da instituição por extenso.&lt;/font&gt;</required>
+       </field>
 	   
 	  </page> 
 	   	   		
@@ -690,19 +702,6 @@
 
     <page number="4"> 
 	   
-
-	   <field>
-         <dc-schema>dc</dc-schema>
-         <dc-element>publisher</dc-element>
-         <dc-qualifier></dc-qualifier>
-         <repeatable>false</repeatable>
-         <label>Nome da instituição por extenso:</label>
-<!--		 <input-type value-pairs-name="common_ies">dropdown</input-type> -->
-         <input-type>onebox</input-type>
-         <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Nome da instituição por extenso.</hint>
-		 <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Nome da instituição por extenso.&lt;/font&gt;</required>
-       </field>
-
 <!--	   
 	   <field>
          <dc-schema>dc</dc-schema>
@@ -793,7 +792,7 @@
          <dc-element>identifier</dc-element>
          <dc-qualifier>isbn</dc-qualifier>
          <repeatable>false</repeatable>
-         <label>Informe o ISBN:</label>
+         <label>ISBN:</label>
 		 <type-bind>book, bookPart</type-bind>
          <input-type>onebox</input-type>
          <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe o ISBN.</hint>
@@ -806,7 +805,7 @@
          <dc-element>identifier</dc-element>
          <dc-qualifier>issn</dc-qualifier>
          <repeatable>false</repeatable>
-         <label>Informe o ISSN:</label>
+         <label>ISSN:</label>
 		 <type-bind>article, conferenceObject</type-bind>
          <input-type>onebox</input-type>
          <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe o ISSN.</hint>
@@ -1100,23 +1099,7 @@
      </pair>
 	
    </value-pairs>
-   
- 
-   <value-pairs value-pairs-name="common_ies" dc-term="publisher">
-     <pair>
-       <displayed-value>Insitituto Brasileiro de Informação em Ciência e Tecnologia</displayed-value>
-       <stored-value>Insitituto Brasileiro de Informação em Ciência e Tecnologia</stored-value>
-     </pair>
-   </value-pairs>
-   
-   <value-pairs value-pairs-name="common_sigla_ies" dc-term="initials">
-     <pair>
-       <displayed-value>IBICT</displayed-value>
-       <stored-value>IBICT</stored-value>
-     </pair>
-   </value-pairs>
-   
-   
+     
   <value-pairs value-pairs-name="common_publisher_programs" dc-term="programs">
      <pair>
        <displayed-value>Programa 1</displayed-value>
