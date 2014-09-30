@@ -87,6 +87,17 @@
          <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe o tipo de acesso ao documento</hint>
          <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Informe o tipo de acesso ao documento.&lt;/font&gt;</required>
        </field>
+
+	  <field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>date</dc-element>
+         <dc-qualifier>available</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Data de liberação para acesso:</label>
+         <input-type>date</input-type>
+         <hint>Data de disponibilidade do registro. Esta pode ser diferente  da disponibilização do texto completo, no caso dos embargos ou restrições de acesso ao documento completo.</hint>
+         <required></required>
+      </field>   
  -->
 	   
 	  </page> 
@@ -103,6 +114,35 @@
          <input-type>date</input-type>
          <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe a data de defesa do documento descrito, ou seja, a data de defesa da tese ou dissertação. </hint>
          <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Informe a data de defesa do documento descrito, ou seja, a data de defesa da tese ou dissertação. &lt;/font&gt;</required>
+       </field>
+	   
+	   <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>date</dc-element>
+         <dc-qualifier>issued</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Data da publicação:</label>
+		 <type-bind>article, conferenceObject, book, bookPart, report, other</type-bind>
+         <input-type>date</input-type>
+         <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe a data da publicação do documento descrito. </hint>
+         <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Informe a data da publicação do documento descrito. &lt;/font&gt;</required>
+       </field>
+	
+		   <field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>author</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Autor(es):</label>
+		 <type-bind>article, conferenceObject, book, bookPart, report, other</type-bind>
+         <input-type>name</input-type>
+         <hint>&lt;div class="alert alert-info"&gt;
+		 Descrição do &lt;strong&gt;AUTOR&lt;/strong&gt;
+		 &lt;a tooltiped="" style="float:right" href="help/submit-help.html#id-autor" &gt;Exemplos&lt;/a&gt;
+		 &lt;/div&gt;
+		 &lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe o nome do(s) autor(es), conforme o formato de citação.</hint>
+         <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Informe o nome do(s) AUTOR(ES), conforme o formato de citação.&lt;/font&gt;
+		           &lt;a href="help/submit-help.html#id-autor" tooltiped="" style="float:right;color:black;" href="#" &gt;Exemplos&lt;/a&gt;</required>
        </field>
 	
 
@@ -277,48 +317,6 @@
          <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe o identificador único do segundo coorientador (CPF, ID de autor privativa da instituição ou passaporte).</hint>
          <required></required>
        </field>  	   
-	
-	   <field>
-		 <dc-schema>dc</dc-schema>
-         <dc-element>contributor</dc-element>
-         <dc-qualifier>author</dc-qualifier>
-         <repeatable>true</repeatable>
-         <label>Autor(es):</label>
-		 <type-bind>article, conferenceObject, book, bookPart, report, other</type-bind>
-         <input-type>name</input-type>
-         <hint>&lt;div class="alert alert-info"&gt;
-		 Descrição do &lt;strong&gt;AUTOR&lt;/strong&gt;
-		 &lt;a tooltiped="" style="float:right" href="help/submit-help.html#id-autor" &gt;Exemplos&lt;/a&gt;
-		 &lt;/div&gt;
-		 &lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe o nome do(s) autor(es), conforme o formato de citação.</hint>
-         <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Informe o nome do(s) AUTOR(ES), conforme o formato de citação.&lt;/font&gt;
-		           &lt;a href="help/submit-help.html#id-autor" tooltiped="" style="float:right;color:black;" href="#" &gt;Exemplos&lt;/a&gt;</required>
-       </field>
-	
-	   <field>
-         <dc-schema>dc</dc-schema>
-         <dc-element>date</dc-element>
-         <dc-qualifier>issued</dc-qualifier>
-         <repeatable>false</repeatable>
-         <label>Data da publicação:</label>
-		 <type-bind>article, conferenceObject, book, bookPart, report, other</type-bind>
-         <input-type>date</input-type>
-         <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe a data da publicação do documento descrito. </hint>
-         <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Informe a data da publicação do documento descrito. &lt;/font&gt;</required>
-       </field>
-	
-<!--	
-	  <field>
-		 <dc-schema>dc</dc-schema>
-         <dc-element>date</dc-element>
-         <dc-qualifier>available</dc-qualifier>
-         <repeatable>false</repeatable>
-         <label>Data de liberação para acesso:</label>
-         <input-type>date</input-type>
-         <hint>Data de disponibilidade do registro. Esta pode ser diferente  da disponibilização do texto completo, no caso dos embargos ou restrições de acesso ao documento completo.</hint>
-         <required></required>
-      </field>   
- -->
 	   
 	</page>
 		
@@ -826,8 +824,8 @@
          <dc-qualifier></dc-qualifier>
          <repeatable>true</repeatable>
          <label>Palavras-chave:</label>
-         <!-- <input-type value-pairs-name="common_languages">qualdrop_language</input-type> -->
-		 <input-type>twobox</input-type>
+         <input-type value-pairs-name="common_languages">qualdrop_language</input-type>
+		 <!--  <input-type>twobox</input-type>  -->
          <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe as palavras-chave do documento descrito. Sugere-se também o uso de termos em inglês.</hint>
          <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Informe as palavras-chave do documento descrito. Sugere-se também o uso de termos em inglês.&lt;/font&gt;</required>
        </field>
@@ -863,8 +861,8 @@
          <dc-qualifier>abstract</dc-qualifier>
          <repeatable>true</repeatable>
          <label>Abstract:</label>
-         <!-- <input-type value-pairs-name="common_languages">qualdrop_textarea_language</input-type> -->
-		 <input-type>textarea</input-type>
+         <input-type value-pairs-name="common_languages">qualdrop_textarea_language</input-type>
+		 <!-- <input-type>textarea</input-type>  -->
          <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Abstract do documento. Preencha com o resumo em língua estrangeira.</hint>
          <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Abstract do documento. Preencha com o resumo em língua estrangeira. &lt;/font&gt;</required>
        </field>  
