@@ -64,7 +64,7 @@
 		<form method="get" action="<%= request.getContextPath() %>/simple-search" class="form-horizontal col-md-12 form-group form-group-lg" scope="search" role="form">
 						
 			<div id="logo-deposita" class="col-md-11 text-center">
-				<a href="<%= request.getContextPath() %>/community-list">
+				<a  id="link-logo-deposita" href="<%= request.getContextPath() %>/community-list">
 					<img src="<%= request.getContextPath() %>/image/logo-deposita.png" usemap="#mapa-brasil">		
 				</a>
 			</div>

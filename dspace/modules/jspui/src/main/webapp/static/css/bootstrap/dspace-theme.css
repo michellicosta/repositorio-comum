@@ -556,6 +556,10 @@ font-size: 40px;
 	margin-bottom: 30px;
 }
 
+#link-logo-deposita {
+	cursor: url(../../../image/lupa.png), default;
+}
+
 /** Aplica borda nas barras de navegação (topo e rodapé) **/
 .navbar {
 	-webkit-border-radius: 15px;
@@ -578,10 +582,12 @@ body {
 	margin-bottom: 30px;
 }
 
+/** Torna lupa de busca da página inicial maior **/
 .searchbox .glyphicon-search {
 	font-size: 22px;
 }
 
+/** Termo de busca da página inicial **/
 #tequery-main-page {
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
@@ -590,19 +596,32 @@ body {
 	font-size: 22px;
 }
 
+/** Torna "placeholder" itálico **/
 ::-webkit-input-placeholder { /* WebKit browsers */
     font-weight: normal;
     font-style: italic;
 }
+/** Torna "placeholder" itálico **/
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
     font-weight: normal;
     font-style: italic;
 }
+/** Torna "placeholder" itálico **/
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
     font-weight: normal;
     font-style: italic;
 }
+/** Torna "placeholder" itálico **/
 :-ms-input-placeholder { /* Internet Explorer 10+ */
     font-weight: normal;
     font-style: italic;
+}
+
+/** Corre problema com "radioboxes" da página de edição de coleções **/
+.input-group .form-control {
+	float: none;
+}
+
+#logo-deposita {
+	
 }
