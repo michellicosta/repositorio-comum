@@ -39,8 +39,25 @@
  <form-definitions>
 
    <form name="td">
-
+   
      <page number="1">
+	 
+	  <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>publisher</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Nome da instituição por extenso:</label>
+<!--		 <input-type value-pairs-name="common_ies">dropdown</input-type> -->
+         <input-type>onebox</input-type>
+         <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Nome da instituição por extenso.</hint>
+		 <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Nome da instituição por extenso.&lt;/font&gt;</required>
+       </field>
+	 
+	 </page>
+   
+
+     <page number="2">
 
 	  <field>
 		 <dc-schema>dc</dc-schema>
@@ -98,23 +115,10 @@
          <hint>Data de disponibilidade do registro. Esta pode ser diferente  da disponibilização do texto completo, no caso dos embargos ou restrições de acesso ao documento completo.</hint>
          <required></required>
       </field>   
- -->
- 
-	   <field>
-         <dc-schema>dc</dc-schema>
-         <dc-element>publisher</dc-element>
-         <dc-qualifier></dc-qualifier>
-         <repeatable>false</repeatable>
-         <label>Nome da instituição por extenso:</label>
-<!--		 <input-type value-pairs-name="common_ies">dropdown</input-type> -->
-         <input-type>onebox</input-type>
-         <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Nome da instituição por extenso.</hint>
-		 <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Nome da instituição por extenso.&lt;/font&gt;</required>
-       </field>
-	   
+ -->   
 	  </page> 
 	   	   		
-   <page number="2"> 
+   <page number="3"> 
    
         <field>
          <dc-schema>dc</dc-schema>
@@ -329,7 +333,7 @@
 	   
 	</page>
 		
-    <page number="3">	   
+    <page number="4">	   
 	   
 	   <!-- PRIMEIRO MEMBRO DA BANCA -->
 	   
@@ -700,7 +704,7 @@
 
 	</page>
 
-    <page number="4"> 
+    <page number="5"> 
 	   
 <!--	   
 	   <field>
@@ -814,7 +818,7 @@
 	 
 	   </page>
 	   
-	   <page number="5">  
+	   <page number="6">  
 	   
 	   <field>
          <dc-schema>dc</dc-schema>
@@ -907,7 +911,7 @@
 	</page>
 	
 	
-	<page number="6">
+	<page number="7">
 
 	   
 	   	<field>
