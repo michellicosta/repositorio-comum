@@ -697,11 +697,13 @@
          <dc-qualifier></dc-qualifier>
          <repeatable>false</repeatable>
          <label>Nome da instituição por extenso:</label>
-		 <input-type value-pairs-name="common_ies">dropdown</input-type>
+<!--		 <input-type value-pairs-name="common_ies">dropdown</input-type> -->
+         <input-type>onebox</input-type>
          <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Nome da instituição por extenso.</hint>
 		 <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Nome da instituição por extenso.&lt;/font&gt;</required>
        </field>
 
+<!--	   
 	   <field>
          <dc-schema>dc</dc-schema>
          <dc-element>publisher</dc-element>
@@ -712,7 +714,7 @@
          <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt;Sigla da instituição.</hint>
          <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Sigla da instituição.&lt;/font&gt;</required>
        </field>
-   
+ -->  
 
 	   <field>
          <dc-schema>dc</dc-schema>
