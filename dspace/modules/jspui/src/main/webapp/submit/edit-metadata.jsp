@@ -606,15 +606,6 @@
          else
          {
            	val = "";
-        	 /** Build automatically citation text **/
-       		if(element != null && element.equals("identifier") && qualifier != null && qualifier.equals("citation"))
-         	{
-       			ItemExportDTO dto = new ItemExportFormats().process(item, ExportType.CITATION);
-       			if(dto != null && dto.getFileContent() != null)
-       			{
- 	        		val = dto.getFileContent();
-       			}
-         	}
             auth = "";
          }
          sb.append("<div class=\"row col-md-12\">\n");

@@ -193,70 +193,9 @@ input.ds-authority-lock.is-unlocked
 	cursor: pointer;
 }
 
-/** Cor do rastro **/
-.breadcrumb {
-    /* background-image: linear-gradient(to bottom, #088a29 0px, #189a3a 100%); */
-}
-
-/** Cor de fundo quantificador de itens **/
-.badge {
-    /* background-color: #006633; */
-}
-
-/** Modifica cor de fundo de caixas de alerta **/
-.alert-info {
- /*    background-image: none;
-    background-color: #449d44;
-    background-repeat: repeat-x;
-    border-color: #7aa97a;
-	color: #fff;	 */
-}
-
-
-.panel-heading {
-/*     background-image: none;
-    background-color: #449d44;
-    background-repeat: repeat-x;
-    border-color: #7aa97a;
-    color: #fff; */
-}
-
-.panel-info {
-	/* border-color: #7aa97a; */
-}
-
-
-.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
-/*     background-color: #7aa97a;
-    border-color: #7aa97a; */
-}
-
-/** Modifica cor do link da submissão **/
-.alert-info a, .alert-info a:HOVER, .alert-info a:VISITED, .alert-info a:FOCUS {
-	/* color: #fff; */
-}
-
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
-/*     background-color: #449d44;
-    border-color: #088A29; */
-}
-
 .btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active, .open .dropdown-toggle.btn-info {
     background-color: #31B404;
     border-color: #31B404;
-}
-
-.navbar-inverse .navbar-nav > .dropdown > a .caret, .navbar-inverse .navbar-nav > .dropdown > a .caret:HOVER, .nav a:hover .caret {
-/*     border-bottom-color: #fff;
-    border-top-color: #fff; */
-}
-
-a:hover, a:focus {
-  /*   color: #449d44; */
-}
-
-.ui-widget-content {
-	/* background: #fff; */
 }
 
 /** Ícone do sistema junto a barra de navegação. **/
@@ -622,6 +561,50 @@ body {
 	float: none;
 }
 
-#logo-deposita {
-	
+/** Faceta 0: Modifica cor da borda **/
+.colorborder0 {
+	border-color: #00988a;
+}
+
+/** Faceta 0: Modifica cor dos links da faceta **/
+.colorborder0 a {
+	color: #00988a;
+}
+
+/** Faceta 0: Modifica cor de fundo da faceta **/
+.panel-success .color0 {
+	background-color: #00988a;
+	border-color: #005c54;
+}
+
+/** Faceta 1: Modifica cor da borda **/
+.colorborder1 {
+	border-color: #13abc5;
+}
+
+/** Faceta 1: Modifica cor da borda **/
+.colorborder1 a {
+	color: #13abc5;
+}
+
+/** Faceta 1: Modifica cor de fundo da faceta **/
+.panel-success .color1 {
+	background-color: #13abc5;
+	border-color: #047c91;
+}
+
+/** Faceta 2: Modifica cor da borda **/
+.colorborder2 {
+	border-color: #295c99;
+}
+
+/** Faceta 2: Modifica cor da borda **/
+.colorborder2 a {
+	color: #295c99;
+}
+
+/** Faceta 2: Modifica cor de fundo da faceta **/
+.panel-success .color2 {
+	background-color: #295c99;
+	border-color: #27405e;
 }

@@ -357,19 +357,7 @@ public class DescribeStep extends AbstractProcessingStep
                     // since this field is missing add to list of error fields
                     addErrorField(request, getFieldName(inputs[i]));
                 }
-                
-                /** Checks if dc.identifier.citation variables **/
-                else if(inputs[i].getElement() != null && inputs[i].getElement().equals("identifier") && inputs[i].getQualifier() != null 
-                		&& inputs[i].getQualifier().equals("citation") && values.length == 1 && inputs[i].isVisible(subInfo.isInWorkflow() ? DCInput.WORKFLOW_SCOPE : DCInput.SUBMISSION_SCOPE))
-            	{
-                	String currentMetadataValue = values[0].value;
-            		if(currentMetadataValue.contains(I18nUtil.getMessage("jsp.submit.dc.identifier.citation.variable.pagenumber")) 
-            				|| currentMetadataValue.contains(I18nUtil.getMessage("jsp.submit.dc.identifier.citation.variable.place")))
-            		{ 
-            			addErrorMessage(request, getFieldName(inputs[i]), I18nUtil.getMessage("jsp.submit.dc.identifier.citation.error"));
-            			addErrorField(request, getFieldName(inputs[i]));
-            		}
-            	}
+               
             }
         }
 

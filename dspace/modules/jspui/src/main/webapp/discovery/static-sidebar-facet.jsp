@@ -77,8 +77,11 @@
 <%-- <h3 class="facets"><fmt:message key="jsp.search.facet.refine" /></h3> --%>
 <div id="facets" class="facetsBox row panel">
 <%
+	int i = 0;
 	for (DiscoverySearchFilterFacet facetConf : facetsConf)
 	{
+		i++;
+		
     	String f = facetConf.getIndexFieldName();
     	List<FacetResult> facet = mapFacetes.get(f);
  	    if (facet == null)
@@ -100,14 +103,14 @@
 	    <%
     	}
 	    %>
-	    	<div class="panel panel-success">
+	    	<div class="panel panel-success <%= renderDiv ? ("colorborder" + i % 3) : "" %>">
 	    		
 	    		<%
 				    int currFp = UIUtil.getIntParameter(request, f+"_page");
 	    		 	boolean isSelected = request.getParameter(f+ "_page") != null;
 	    		%>
 	    	
-		    	<div class="panel-heading facet-panel clickable-panel"><fmt:message key="<%= fkey %>" /><span class="glyphicon glyphicon-plus pull-right"></span></div>
+		    	<div class="panel-heading facet-panel clickable-panel <%= renderDiv ? ("color" + i % 3) : "" %>"><fmt:message key="<%= fkey %>" /><span class="glyphicon glyphicon-plus pull-right"></span></div>
 		    		<ul class="list-group hideFacets" <%= isSelected ? "style=\"display:block\";" : "" %> ><%
 					    int idx = 1;
 					    if (currFp < 0)
