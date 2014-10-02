@@ -611,5 +611,5 @@ body {
 
 /** Z-index do footer, para trás das caixas de seleção **/
 footer {
-    z-index : -1;
+    z-index : -1 !important;
 }
