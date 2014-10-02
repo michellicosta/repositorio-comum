@@ -608,3 +608,8 @@ body {
 	background-color: #295c99;
 	border-color: #27405e;
 }
+
+/** Z-index do footer, para trás das caixas de seleção **/
+footer {
+    z-index : -1;
+}
