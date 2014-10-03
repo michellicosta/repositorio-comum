@@ -152,7 +152,6 @@
          <input-type>date</input-type>
          <hint>&lt;div class="alert alert-info"&gt;
 		 &lt;strong&gt;DATA DE DEFESA&lt;/strong&gt;
-		 &lt;a tooltiped="" style="float:right" href="help/submit-help.html#id-date-defense" &gt;Exemplos&lt;/a&gt;
 		 &lt;/div&gt;
 		 &lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe a data de defesa do documento descrito, ou seja, a data de defesa da tese ou dissertação. </hint>
          <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Informe a data de defesa do documento descrito, ou seja, a data de defesa da tese ou dissertação. &lt;/font&gt;</required>
@@ -168,7 +167,6 @@
          <input-type>date</input-type>
          <hint>&lt;div class="alert alert-info"&gt;
 		 &lt;strong&gt;DATA DE PUBLICAÇÃO&lt;/strong&gt;
-		 &lt;a tooltiped="" style="float:right" href="help/submit-help.html#id-date-issued" &gt;Exemplos&lt;/a&gt;
 		 &lt;/div&gt;
 		 &lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe a data da publicação do documento descrito. </hint>
          <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Informe a data da publicação do documento descrito. &lt;/font&gt;</required>
