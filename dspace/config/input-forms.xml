@@ -49,7 +49,7 @@
          <dc-qualifier>sponsorship</dc-qualifier>
          <repeatable>true</repeatable>
          <label>Agência(s) de &lt;br&gt; fomento:</label>
-		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
+ <!--    <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>  -->
          <input-type>onebox</input-type>
          <hint> &lt;div class="alert alert-info"&gt;
 		 &lt;strong&gt;AGÊNCIA DE FOMENTO&lt;/strong&gt;
