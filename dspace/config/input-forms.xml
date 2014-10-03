@@ -42,6 +42,26 @@
    
      <page number="1">
 	 
+	 
+	  <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>sponsorship</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Agência(s) de &lt;br&gt; fomento:</label>
+		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
+         <input-type>onebox</input-type>
+         <hint> &lt;div class="alert alert-info"&gt;
+		 &lt;strong&gt;AGÊNCIA DE FOMENTO&lt;/strong&gt;
+		 &lt;a tooltiped="" style="float:right" href="help/submit-help.html#id-sponsorship" &gt;Exemplos&lt;/a&gt;
+		 &lt;/div&gt;
+		 &lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Agência(s) de fomento que auxiliou(ram) o pesquisador.</hint>
+         <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Agência(s) de fomento que auxiliou(ram) o pesquisador. &lt;/font&gt;</required>
+       </field>
+	   
+	 
+	 
+	 
 	  <field>
          <dc-schema>dc</dc-schema>
          <dc-element>publisher</dc-element>
@@ -50,7 +70,11 @@
          <label>Nome da instituição por extenso:</label>
 <!--		 <input-type value-pairs-name="common_ies">dropdown</input-type> -->
          <input-type>onebox</input-type>
-         <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Nome da instituição por extenso.</hint>
+         <hint>&lt;div class="alert alert-info"&gt;
+		 &lt;strong&gt;INSTITUIÇÃO&lt;/strong&gt;
+		 &lt;a tooltiped="" style="float:right" href="help/submit-help.html#id-institution" &gt;Exemplos&lt;/a&gt;
+		 &lt;/div&gt;
+		 &lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Nome da instituição por extenso.</hint>
 		 <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Nome da instituição por extenso.&lt;/font&gt;</required>
        </field>
 	 
@@ -128,7 +152,11 @@
          <label>Data da defesa:</label>
 		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
          <input-type>date</input-type>
-         <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe a data de defesa do documento descrito, ou seja, a data de defesa da tese ou dissertação. </hint>
+         <hint>&lt;div class="alert alert-info"&gt;
+		 &lt;strong&gt;DATA DE DEFESA&lt;/strong&gt;
+		 &lt;a tooltiped="" style="float:right" href="help/submit-help.html#id-date-defense" &gt;Exemplos&lt;/a&gt;
+		 &lt;/div&gt;
+		 &lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe a data de defesa do documento descrito, ou seja, a data de defesa da tese ou dissertação. </hint>
          <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Informe a data de defesa do documento descrito, ou seja, a data de defesa da tese ou dissertação. &lt;/font&gt;</required>
        </field>
 	   
@@ -140,7 +168,11 @@
          <label>Data da publicação:</label>
 		 <type-bind>article, conferenceObject, book, bookPart, report, other</type-bind>
          <input-type>date</input-type>
-         <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe a data da publicação do documento descrito. </hint>
+         <hint>&lt;div class="alert alert-info"&gt;
+		 &lt;strong&gt;DATA DE PUBLICAÇÃO&lt;/strong&gt;
+		 &lt;a tooltiped="" style="float:right" href="help/submit-help.html#id-date-issued" &gt;Exemplos&lt;/a&gt;
+		 &lt;/div&gt;
+		 &lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe a data da publicação do documento descrito. </hint>
          <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Informe a data da publicação do documento descrito. &lt;/font&gt;</required>
        </field>
 	
@@ -738,7 +770,7 @@
          <dc-qualifier>program</dc-qualifier>
          <repeatable>true</repeatable>
          <label>Nome(s) do(s) programa(s) de pós-graduação por extenso:</label>
-		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
+		 <type-bind>doctoralThesis, mastherThesis</type-bind>
          <input-type>onebox</input-type>
          <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Nome(s) do(s) programa(s) de pós-graduação por extenso.</hint>
          <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Nome(s) do(s) programa(s) de pós-graduação por extenso.&lt;/font&gt;</required>
@@ -870,18 +902,6 @@
        </field>  
 
 			
-       <field>
-         <dc-schema>dc</dc-schema>
-         <dc-element>description</dc-element>
-         <dc-qualifier>sponsorship</dc-qualifier>
-         <repeatable>true</repeatable>
-         <label>Agência(s) de &lt;br&gt; fomento:</label>
-		 <type-bind>doctoralThesis, mastherThesis, bachelorThesis</type-bind>
-         <input-type>onebox</input-type>
-         <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Agência(s) de fomento que auxiliou(ram) o pesquisador.</hint>
-         <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Agência(s) de fomento que auxiliou(ram) o pesquisador. &lt;/font&gt;</required>
-       </field>
-	   
       
 	   <field>
          <dc-schema>dc</dc-schema>
