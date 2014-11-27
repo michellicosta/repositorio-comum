@@ -10,8 +10,8 @@
 #
 # See org.dspace.core.Email for information on the format of this file.
 #
-Subject: DSpace: Internal Server Error
-An internal server error occurred on {0}:
+Subject: Erro interno do sistema
+Um erro do sistema aconteceu em {0}:
 
 Date:       {1}
 Session ID: {2}
@@ -22,3 +22,10 @@ IP address: {6}
 
 Exception:
 {4}
+
+Deposita - Repositório Comum do Brasil
+deposita@ibict.br
++55 61 3217-6449
+
+Instituto Brasileiro de Informação em Ciência e Tecnologia (IBICT)
+Ministério da Ciência, Tecnologia e Inovação (MCTI)
