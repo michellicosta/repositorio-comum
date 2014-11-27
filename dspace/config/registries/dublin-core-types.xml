@@ -477,7 +477,7 @@
   <dc-type>
     <schema>dc</schema>
     <element>citation</element>
-    <qualifier>issued</qualifier>
+    <qualifier>issue</qualifier>
     <scope_note></scope_note>
   </dc-type>
   
