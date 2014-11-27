@@ -451,6 +451,44 @@
    -->
    
   <!-- -->
+  
+    <dc-type>
+    <schema>dc</schema>
+    <element>citation</element>
+    <qualifier></qualifier>
+    <scope_note></scope_note>
+  </dc-type>
+  
+  <dc-type>
+    <schema>dc</schema>
+    <element>citation</element>
+    <qualifier>spage</qualifier>
+    <scope_note></scope_note>
+  </dc-type>
+  
+  
+   <dc-type>
+    <schema>dc</schema>
+    <element>citation</element>
+    <qualifier>epage</qualifier>
+    <scope_note></scope_note>
+  </dc-type>
+  
+  <dc-type>
+    <schema>dc</schema>
+    <element>citation</element>
+    <qualifier>issued</qualifier>
+    <scope_note></scope_note>
+  </dc-type>
+  
+  <dc-type>
+    <schema>dc</schema>
+    <element>audience</element>
+    <qualifier>educationlevel</qualifier>
+    <scope_note></scope_note>
+  </dc-type>
+  
+  
   <dc-type>
 	<schema>dc</schema>
     <element>identifier</element>
