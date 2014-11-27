@@ -10,9 +10,9 @@
 #
 # See org.dspace.core.Email for information on the format of this file.
 #
-Subject: Feedback Form Information
+Subject: Formulário de feedback
 
-Comments:
+Comentários:
 
 {6}
 
@@ -24,3 +24,9 @@ Referring Page: {3}
 User Agent: {4}
 Session: {5}
 
+Deposita - Repositório Comum do Brasil
+deposita@ibict.br
++55 61 3217-6449
+
+Instituto Brasileiro de Informação em Ciência e Tecnologia (IBICT)
+Ministério da Ciência, Tecnologia e Inovação (MCTI)
