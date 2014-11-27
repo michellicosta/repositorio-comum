@@ -8,10 +8,18 @@
 #
 # See org.dspace.core.Email for information on the format of this file.
 #
-Subject: DSpace: Registration Notification
+Subject: Notificação de registro de usuária(o) no Deposita
 
-A new user has registered on {0} at {1}:
+Um(a) novo(a) usuário(a) foi registrado no {0} em {1}:
 
-Name:                   {2}
+Nome:                   {2}
 Email:                  {3}
-Date:                   {4}
+Data do registro:                   {4}
+
+
+Deposita - Repositório Comum do Brasil
+deposita@ibict.br
++55 61 3217-6449
+
+Instituto Brasileiro de Informação em Ciência e Tecnologia (IBICT)
+Ministério da Ciência, Tecnologia e Inovação (MCTI)
